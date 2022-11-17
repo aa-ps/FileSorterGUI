@@ -3,10 +3,10 @@ import shutil
 
 
 class FileSorter:
-    def __init__(self, path, dest, prfix):
+    def __init__(self, path, dest, prefix):
         self.origin = path
         self.destination = dest
-        self.prefix = prfix
+        self.prefix = prefix if prefix != "" else dest.split("/")[-1]
         self.files = self.getFiles()
         self.count = len(self.files)
 
