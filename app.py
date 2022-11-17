@@ -13,7 +13,7 @@ layout = [
             [sg.Submit("Sort Files", key="Submit")]
             ]
 
-window = sg.Window('File Sorter 9000', layout, icon="C:/Users/Pulido/Documents/College/Fall2022/Python/Scripts/FileSorterGUI/icon.ico")
+window = sg.Window('File Sorter 9000', layout, icon="icon.ico")
 
 while True:
     event, values = window.read()
